@@ -1,0 +1,6 @@
+{
+  "name": "Doceria da Fran - Bolos, Doces & Afetos",
+  "description": "Catálogo online e encomendas artesanais da Doceria da Fran em Jacobina, BA. Bolos artesanais, bolos vulcão, tortas e doces finos com pedido direto pelo WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

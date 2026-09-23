@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles, Heart, Award, ArrowDown, MessageCircle, Clock, MapPin } from 'lucide-react';
-import { STORE_CONFIG } from '../data/products';
+import { STORE_CONFIG, PRODUCTS } from '../data/products';
 
 interface HeroProps {
   onScrollToMenu: () => void;
@@ -125,8 +125,10 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToMenu }) => {
 
                 <div className="flex items-center gap-3">
                   <img
-                    src="/src/assets/images/bolo_vulcao_ninho_nutella_1790168516619.jpg"
+                    src={PRODUCTS[0].image}
                     alt="Bolo Vulcão Ninho e Nutella"
+                    loading="lazy"
+                    decoding="async"
                     className="w-14 h-14 rounded-xl object-cover shrink-0 border border-[#F9C5D5]"
                   />
                   <div className="text-left flex-1 min-w-0">

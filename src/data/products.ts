@@ -1,5 +1,13 @@
 import { Product } from '../types';
 
+// Direct ES Module imports so Vite bundles, optimizes, hashes, and includes them in dist/assets
+import avatarImg from '../assets/images/fran_confectioner_avatar_1790168497502.jpg';
+import boloVulcaoImg from '../assets/images/bolo_vulcao_ninho_nutella_1790168516619.jpg';
+import boloFestivoImg from '../assets/images/bolo_festivo_rosas_1790168531570.jpg';
+import tortaImg from '../assets/images/torta_frutas_vermelhas_1790168547179.jpg';
+import docinhosImg from '../assets/images/docinhos_gourmet_festa_1790168564674.jpg';
+import boloCenouraImg from '../assets/images/bolo_caseiro_cenoura_chocolate_1790168581383.jpg';
+
 export const STORE_CONFIG = {
   name: 'Doceria da Fran',
   subtitle: 'Bolos, Doces & Afetos',
@@ -15,7 +23,7 @@ export const STORE_CONFIG = {
   instagram: '@doceriadafran.jacobina',
   deliveryFee: 8.00, // Taxa de entrega fixa referencial em Jacobina
   openingHours: 'Segunda a Sábado: 08:30 às 18:30 • Domingo: Encomendas prévias',
-  avatarImage: '/src/assets/images/fran_confectioner_avatar_1790168497502.jpg',
+  avatarImage: avatarImg,
 };
 
 export const CATEGORIES: { id: string; label: string }[] = [
@@ -38,7 +46,7 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Massa amanteigada', 'Leite Ninho integral', 'Nutella original', 'Morangos selecionados', 'Creme de leite fresco'],
     servings: 'Aprox. 1.7kg • Serve de 10 a 14 fatias',
     leadTime: 'Encomenda com 24h ou pronta entrega (consulte)',
-    image: '/src/assets/images/bolo_vulcao_ninho_nutella_1790168516619.jpg',
+    image: boloVulcaoImg,
     highlightBadge: 'Mais Pedido',
     isPopular: true,
   },
@@ -52,7 +60,7 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Baunilha em fava', 'Brigadeiro branco belga', 'Geleia artesanal de frutas vermelhas', 'Macarons artesanais', 'Folhas de ouro comestíveis'],
     servings: 'Aprox. 2.2kg • Serve de 16 a 20 fatias',
     leadTime: 'Encomenda com 48h de antecedência',
-    image: '/src/assets/images/bolo_festivo_rosas_1790168531570.jpg',
+    image: boloFestivoImg,
     highlightBadge: 'Exclusivo Fran',
     isPopular: true,
   },
@@ -66,7 +74,7 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Farinha de amêndoas', 'Manteiga de primeira', 'Chocolate belga 54%', 'Frutas vermelhas frescas', 'Creme pâtissière'],
     servings: 'Aprox. 1.4kg • Serve de 8 a 10 fatias',
     leadTime: 'Encomenda com 24h de antecedência',
-    image: '/src/assets/images/torta_frutas_vermelhas_1790168547179.jpg',
+    image: tortaImg,
     highlightBadge: 'Favorito do Mês',
     isPopular: false,
   },
@@ -80,7 +88,7 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Leite condensado moça', 'Pistache importado', 'Chocolate belga Callebaut', 'Doce de leite mineiro', 'Nutella'],
     servings: '25 unidades • Embalagem rígida para presente ou festa',
     leadTime: 'Encomenda com 24h ou pronta entrega',
-    image: '/src/assets/images/docinhos_gourmet_festa_1790168564674.jpg',
+    image: docinhosImg,
     highlightBadge: 'Perfeito para Presente',
     isPopular: true,
   },
@@ -94,7 +102,7 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Cenouras frescas da horta', 'Ovos caipiras', 'Cacau 50%', 'Manteiga pura', 'Leite condensado'],
     servings: 'Aprox. 1.2kg • Serve até 10 fatias fartas',
     leadTime: 'Pronta entrega ou encomenda no mesmo dia',
-    image: '/src/assets/images/bolo_caseiro_cenoura_chocolate_1790168581383.jpg',
+    image: boloCenouraImg,
     highlightBadge: 'Receita Afetiva',
     isPopular: true,
   },
@@ -108,7 +116,7 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Cacau Black alcalino', 'Chocolate meio amargo nobre', 'Granulado belga macio', 'Leite moça', 'Morangos frescos'],
     servings: 'Aprox. 1.6kg • Serve de 10 a 14 fatias',
     leadTime: 'Encomenda com 24h de antecedência',
-    image: '/src/assets/images/bolo_vulcao_ninho_nutella_1790168516619.jpg',
+    image: boloVulcaoImg,
     highlightBadge: 'Amantes de Cacau',
     isPopular: false,
   },
@@ -122,7 +130,7 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Morangos maduros', 'Creme de nata fresca', 'Fava de baunilha', 'Pão de ló amanteigado artesanal'],
     servings: 'Aprox. 1.5kg • Serve de 10 a 12 fatias',
     leadTime: 'Encomenda com 24h de antecedência',
-    image: '/src/assets/images/torta_frutas_vermelhas_1790168547179.jpg',
+    image: tortaImg,
     highlightBadge: 'Leve & Refinado',
     isPopular: false,
   },
@@ -136,7 +144,7 @@ export const PRODUCTS: Product[] = [
     ingredients: ['Cacau nobre', 'Coco fresco ralado', 'Morango puro', 'Leite moça', 'Manteiga extra'],
     servings: '100 unidades • Indicado para festas de 15 a 25 pessoas',
     leadTime: 'Encomenda com no mínimo 48h de antecedência',
-    image: '/src/assets/images/docinhos_gourmet_festa_1790168564674.jpg',
+    image: docinhosImg,
     highlightBadge: 'Kit Festa',
     isPopular: false,
   }
